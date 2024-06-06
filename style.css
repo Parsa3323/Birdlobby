@@ -38,4 +38,11 @@ body {
     font-size: 18px;
     margin-top: 10px;
     color: white; /* Make the coin count text visible on the blurred background */
+    transition: color 0.3s ease; /* Add a smooth color transition */
+}
+
+#energy-count {
+    font-size: 16px;
+    color: #f0f0f0; /* Light gray color for energy count */
+    margin-top: 5px;
 }
