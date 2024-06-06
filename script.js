@@ -4,7 +4,7 @@ const coinCountElement = document.getElementById('coin-count');
 const energyCountElement = document.getElementById('energy-count');
 
 let coinCount = parseInt(localStorage.getItem('coinCount')) || 0;
-let energy = parseInt(localStorage.getItem('energy')) || 10; // Initial energy
+let energy = parseInt(localStorage.getItem('energy')) || 100; // Initial energy
 
 updateCoinCount();
 updateEnergyCount();
@@ -38,9 +38,9 @@ function saveEnergy() {
 
 // Refill energy every 30 seconds (adjust as needed)
 setInterval(() => {
-    if (energy < 10) {
+    if (energy < 90) {
         energy++;
         updateEnergyCount();
         saveEnergy();
     }
-}, 30000);
+}, 3000);
