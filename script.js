@@ -38,7 +38,7 @@ function saveEnergy() {
 
 // Refill energy every 30 seconds (adjust as needed)
 setInterval(() => {
-    if (energy < 90) {
+    if (energy < 100) {
         energy++;
         updateEnergyCount();
         saveEnergy();
