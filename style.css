@@ -1,0 +1,41 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("pexels-pixabay-257360.jpg"); /* Replace with your nature image */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    text-align: center;
+    backdrop-filter: blur(8px); /* Add the blur effect */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.2); /* Make the background slightly transparent */
+}
+
+.coin {
+    width: 50px;
+    height: 50px;
+    background-color: gold;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 auto;
+    transition: transform 0.2s ease;
+}
+
+.coin:hover {
+    transform: scale(1.1);
+}
+
+#coin-count {
+    font-size: 18px;
+    margin-top: 10px;
+    color: white; /* Make the coin count text visible on the blurred background */
+}
