@@ -43,4 +43,4 @@ setInterval(() => {
         updateEnergyCount();
         saveEnergy();
     }
-}, 3000);
+}, 5000);
